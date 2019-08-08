@@ -1,0 +1,17 @@
+Exercises
+
+1) What is a Node module?
+
+    - A Node module is a collection of functions that will be used in the
+      application.
+
+2) What is the main difference between `exports` and `module.exports`?
+
+    - `module.exports` is an object that is returned by require() and `exports` 
+       is just a reference to the `module.exports` object.
+
+3) Why is using exports recommended?
+
+    -  Becasue `exports` is a reference, it cannot reassign the `module.exports`
+       object.  Using `module.exports` will restrict the module to one object type.  
+       Using `exports` will allow you to use various object types.
